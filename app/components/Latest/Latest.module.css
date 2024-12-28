@@ -1,0 +1,71 @@
+.latest {
+  padding: 4rem 1.5rem;
+  background: #ffffff;
+}
+
+.latestGrid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  align-items: center;
+}
+
+.latestImage {
+  width: 100%;
+  position: relative;
+  aspect-ratio: 3/2;
+}
+
+.latestImg {
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.latestContent {
+  padding: 1.5rem;
+}
+
+.latestContent h2 {
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+.latestContent p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  opacity: 0.8;
+  letter-spacing: 0.05em;
+}
+
+.latestButton {
+  padding: 0.8rem 2rem;
+  border: 1px solid #000000;
+  background: #000000;
+  color: #ffffff;
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.latestButton:hover {
+  background: transparent;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .latest {
+    padding: 3rem 1rem;
+  }
+
+  .latestGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+} 

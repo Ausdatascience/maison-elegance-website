@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="1067" viewBox="0 0 800 1067" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="1067" fill="#F2F0E6"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M400 267C400 267 600 133 800 267V1067H0V267C200 133 400 267 400 267Z" fill="#1A1A1A" fill-opacity="0.05"/>
+  <rect x="200" y="267" width="400" height="533" fill="#1A1A1A" fill-opacity="0.1"/>
+  <path d="M300 400H500V667H300V400Z" fill="#1A1A1A" fill-opacity="0.2"/>
+  <circle cx="400" cy="533" r="100" fill="#1A1A1A" fill-opacity="0.15"/>
+</svg> 
