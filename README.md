@@ -1,36 +1,128 @@
-# MAISON ÉLÉGANCE - 高端品牌网站模板
+# MAISON ÉLÉGANCE
 
-一个优雅的高端品牌展示网站模板，基于 Next.js 构建，支持中英文切换，响应式设计。
+[English](#english) | [中文](#chinese)
+
+# <a name="english"></a>Luxury Jewelry Brand Website
+
+An elegant luxury jewelry brand website built with Next.js, featuring bilingual support and responsive design.
+
+## Project Structure
+
+```
+app/
+├── components/          # Reusable components
+│   ├── Hero/           # Hero section
+│   ├── Collections/    # Collections display
+│   ├── Featured/       # Featured items
+│   ├── Latest/         # Latest collections
+│   ├── Services/       # Craftsmanship
+│   ├── Footer/         # Footer component
+│   └── Sidebar/        # Side navigation
+├── locales/            # Localization
+│   ├── zh.js          # Chinese content
+│   └── en.js          # English content
+└── page.js            # Main page
+```
+
+## Key Features
+
+1. Responsive Design
+   - Desktop (1024px+)
+   - Tablet (768px - 1024px)
+   - Mobile (<768px)
+
+2. Bilingual Support
+   - English
+   - Chinese
+
+3. Interactive Features
+   - Sidebar navigation
+   - Language switching
+   - Responsive layout
+   - Elegant animations
+
+4. Component Features
+   - Side navigation menu
+   - Brand showcase
+   - Collection display
+   - Craftsmanship section
+   - Footer information
+
+## Theme Styling
+
+1. Color System
+```css
+:root {
+  --primary: #B8860B;     /* Primary - Dark Gold */
+  --background: #000;     /* Background - Black */
+  --text: #fff;          /* Main Text - White */
+  --text-secondary: #888; /* Secondary Text - Gray */
+}
+```
+
+## Getting Started
+
+1. Install Dependencies
+```bash
+npm install
+```
+
+2. Development
+```bash
+npm run dev
+```
+
+3. Production Build
+```bash
+npm run build
+```
+
+## Customization
+
+1. Content Modification
+   - Edit language files in `locales`
+   - Modify text content
+
+2. Style Customization
+   - Modify component style files
+   - Adjust responsive layout
+
+## Performance
+
+1. Image Optimization
+   - Next.js Image component
+   - Responsive images
+
+2. Code Splitting
+   - Component-level splitting
+   - Lazy loading
+
+3. SEO Optimization
+   - Semantic HTML
+   - Meta tags optimization
+
+---
+
+# <a name="chinese"></a>高端珠宝品牌网站
+
+一个优雅的高端珠宝品牌展示网站，基于 Next.js 构建，支持中英文切换，响应式设计。
 
 ## 项目结构
 
 ```
 app/
 ├── components/          # 可复用组件
-│   ├── layout/         # 布局相关组件
-│   │   ├── Header/    
-│   │   ├── Footer/    
-│   │   └── Navbar/    
-│   ├── ui/            # UI 组件
-│   │   ├── Button/   
-│   │   ├── Card/     
-│   │   └── Icons/    
-│   └── sections/      # 页面区块组件
-│       ├── Hero/      
-│       ├── Features/  
-│       └── Contact/   
-├── styles/            # 样式文件
-│   ├── globals.css    # 全局样式
-│   └── variables.css  # CSS 变量
-├── utils/             # 工具函数
-│   ├── i18n.js       # 国际化工具
-│   └── animations.js  # 动画工具
-├── hooks/             # 自定义 Hooks
-│   └── useScroll.js  # 滚动相关 Hook
-└── content/          # 内容配置
-    └── locales/      # 多语言内容
-        ├── zh.js     # 中文内容
-        └── en.js     # 英文内容
+│   ├── Hero/           # 首屏展示
+│   ├── Collections/    # 系列展示
+│   ├── Featured/       # 精选展示
+│   ├── Latest/         # 最新系列
+│   ├── Services/       # 匠心工艺
+│   ├── Footer/         # 页脚组件
+│   └── Sidebar/        # 侧边导航
+├── locales/            # 多语言配置
+│   ├── zh.js          # 中文内容
+│   └── en.js          # 英文内容
+└── page.js            # 主页面
 ```
 
 ## 主要功能
@@ -43,38 +135,29 @@ app/
 2. 多语言支持
    - 中文
    - 英文
-   - 易扩展其他语言
 
 3. 交互功能
-   - 导航栏透明渐变
-   - 汉堡菜单动画
-   - 卡片翻转效果
-   - 平滑滚动
+   - 侧边栏导航
+   - 语言切换
+   - 响应式布局
+   - 优雅动画效果
 
 4. 组件特性
-   - 顶部导航栏（透明渐变）
-   - 侧边菜单（响应式）
-   - 翻转卡片展示
-   - 页脚联系信息
+   - 侧边导航菜单
+   - 品牌展示区域
+   - 系列展示
+   - 匠心工艺
+   - 页脚信息
 
 ## 样式主题
 
 1. 颜色系统
 ```css
 :root {
-  --primary: #4A3F35;     /* 主色 */
-  --primary-light: #6B5D4F;
-  --background: #FAF3E0;  /* 背景色 */
-  --text: #1a1a1a;       /* 文本色 */
-  --text-light: #D4C8BE;
-}
-```
-
-2. 字体系统
-```css
-:root {
-  --font-primary: "Playfair Display", serif;
-  --font-secondary: system-ui, sans-serif;
+  --primary: #B8860B;     /* 主色调 - 暗金色 */
+  --background: #000;     /* 背景色 - 黑色 */
+  --text: #fff;          /* 主要文本 - 白色 */
+  --text-secondary: #888; /* 次要文本 - 灰色 */
 }
 ```
 
@@ -98,57 +181,27 @@ npm run build
 ## 自定义配置
 
 1. 内容修改
-   - 编辑 `content/locales` 下的语言文件
-   - 修改文本和图片资源
+   - 编辑 `locales` 下的语言文件
+   - 修改文本内容
 
 2. 样式定制
-   - 修改 `styles/variables.css` 中的主题变量
-   - 调整组件样式文件
-
-3. 功能扩展
-   - 在 `components` 中添加新组件
-   - 在 `hooks` 中添加新的功能钩子
+   - 修改组件样式文件
+   - 调整响应式布局
 
 ## 性能优化
 
 1. 图片优化
    - 使用 Next.js Image 组件
    - 支持响应式图片
-   - WebP 格式支持
 
 2. 代码分割
-   - 组件懒加载
-   - 路由级别代码分割
+   - 组件级别代码分割
+   - 按需加载
 
 3. SEO 优化
    - 语义化 HTML
    - Meta 标签优化
-   - 结构化数据
 
-## 最佳实践
-
-1. 组件开发
-   - 保持组件单一职责
-   - 使用 TypeScript 类型检查
-   - 编写组件文档
-
-2. 样式管理
-   - 使用 CSS Modules
-   - 遵循 BEM 命名规范
-   - 响应式设计优先
-
-3. 状态管理
-   - 使用 React Hooks
-   - 合理的状态提升
-   - 避免过度优化
-
-## 贡献指南
-
-1. Fork 项目
-2. 创建特性分支
-3. 提交变更
-4. 发起 Pull Request
-
-## 许可证
+## License | 许可证
 
 MIT License
