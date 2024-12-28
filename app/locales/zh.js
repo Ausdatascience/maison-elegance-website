@@ -62,6 +62,6 @@ export const zh = {
   },
   sidebar: {
     contact: '联系我们',
-    address: '上海市黄浦区南京东路999号'
+    address: '请修改地址'
   }
 }; 

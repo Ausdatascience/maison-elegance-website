@@ -62,6 +62,6 @@ export const en = {
   },
   sidebar: {
     contact: 'CONTACT',
-    address: 'Address'
+    address: 'Please update address'
   }
 }; 
