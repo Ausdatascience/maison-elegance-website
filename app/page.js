@@ -11,41 +11,14 @@ import Latest from './components/Latest/Latest';
 import Services from './components/Services/Services';
 import Footer from './components/Footer/Footer';
 import LanguageSelector from './components/LanguageSelector/LanguageSelector';
+import { useLanguage } from './hooks/useLanguage';
+import { useMenuState } from './hooks/useMenuState';
+import { useHeroVisibility } from './hooks/useHeroVisibility';
 
 export default function Home() {
-  const [language, setLanguage] = useState('en');
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isHeroVisible, setIsHeroVisible] = useState(true);
-
-  const handleScroll = useCallback(() => {
-    const heroSection = document.querySelector('[data-hero]');
-    if (heroSection) {
-      const rect = heroSection.getBoundingClientRect();
-      setIsHeroVisible(rect.bottom > 0);
-    }
-  }, []);
-
-  useEffect(() => {
-    handleScroll();
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [handleScroll]);
-
-  useEffect(() => {
-    const body = document.body;
-    if (isMenuOpen) {
-      body.style.overflow = 'hidden';
-    } else {
-      body.style.overflow = '';
-    }
-    return () => {
-      body.style.overflow = '';
-    };
-  }, [isMenuOpen]);
-
-  const t = language === 'zh' ? zh : en;
+  const { language, setLanguage, t } = useLanguage();
+  const [isMenuOpen, setIsMenuOpen] = useMenuState();
+  const isHeroVisible = useHeroVisibility();
 
   return (
     <main className={styles.main}>
