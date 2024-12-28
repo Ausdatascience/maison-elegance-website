@@ -95,24 +95,42 @@
 }
 
 @media (max-width: 768px) {
+  .footer {
+    padding: 2rem 1rem 1rem;
+  }
+
   .footerContent {
     flex-direction: column;
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .footerBrand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .footerLinks {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .footerColumn {
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .footerColumn h4 {
+    margin-bottom: 0.6rem;
   }
 
   .footerBottom {
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 1rem;
     text-align: center;
-  }
-
-  .footer {
-    padding: 2rem 1rem 1rem;
+    padding-top: 1.2rem;
   }
 } 

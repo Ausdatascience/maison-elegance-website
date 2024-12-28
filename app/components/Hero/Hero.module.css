@@ -27,6 +27,8 @@
   text-align: center;
   color: #ffffff;
   z-index: 2;
+  width: 90%;
+  max-width: 1200px;
 }
 
 .heroTitle {
@@ -47,5 +49,17 @@
 @media (max-width: 768px) {
   .hero {
     height: 80vh;
+  }
+
+  .heroContent {
+    width: 85%;
+  }
+
+  .heroTitle {
+    letter-spacing: 0.2em;
+  }
+
+  .heroSubtitle {
+    letter-spacing: 0.15em;
   }
 } 
