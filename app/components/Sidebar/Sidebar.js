@@ -1,8 +1,11 @@
 'use client';
 import styles from './Sidebar.module.css';
-import LanguageSelector from '../LanguageSelector/LanguageSelector';
 
 export default function Sidebar({ t, isMenuOpen, setIsMenuOpen, isHeroVisible, language, setLanguage }) {
+  const toggleLanguage = () => {
+    setLanguage(language === 'en' ? 'zh' : 'en');
+  };
+
   return (
     <>
       <button 
@@ -15,12 +18,13 @@ export default function Sidebar({ t, isMenuOpen, setIsMenuOpen, isHeroVisible, l
         <span></span>
       </button>
 
-      <LanguageSelector 
-        language={language}
-        setLanguage={setLanguage}
-        variant="sidebar"
-        shortText={true}
-      />
+      <button
+        className={styles.langSwitch}
+        onClick={toggleLanguage}
+        aria-label="Switch Language"
+      >
+        {language === 'en' ? '中' : 'En'}
+      </button>
 
       <div className={`${styles.sidebar} ${isMenuOpen ? styles.open : ''}`}>
         <nav className={styles.sidebarNav}>
