@@ -2,51 +2,51 @@ export const en = {
   nav: {
     home: 'HOME',
     collections: 'COLLECTIONS',
-    about: 'ABOUT',
-    sustainability: 'SUSTAINABILITY',
-    stores: 'STORES'
+    about: 'HERITAGE',
+    sustainability: 'SAVOIR-FAIRE',
+    stores: 'BOUTIQUES'
   },
   hero: {
-    title: 'ELEGANCE HERITAGE',
-    subtitle: 'SPRING 2024 COLLECTION'
+    title: 'TIMELESS ELEGANCE',
+    subtitle: 'ARTISTRY IN PRECIOUS MOMENTS'
   },
   collections: {
     iconic: {
-      title: 'ICONIC COLLECTION',
-      action: 'EXPLORE'
+      title: 'HERITAGE COLLECTION',
+      action: 'DISCOVER'
     },
     artycapucines: {
-      title: 'ARTYCAPUCINES',
-      action: 'DISCOVER'
+      title: 'ARTISTIC JEWELS',
+      action: 'EXPLORE'
     }
   },
   featured: {
-    title: 'SAVOIR-FAIRE',
-    text: 'DISCOVER THE PERFECT BLEND OF CRAFTSMANSHIP AND INNOVATION',
-    action: 'LEARN MORE'
+    title: 'CRAFTSMANSHIP',
+    text: 'CELEBRATING A CENTURY OF FINE JEWELRY ARTISTRY',
+    action: 'DISCOVER MORE'
   },
   latest: {
-    title: 'NEW COLLECTION',
-    text: 'EXPLORE SPRING 2024',
-    action: 'EXPLORE NOW'
+    title: 'NEW ARRIVALS',
+    text: 'DISCOVER OUR LATEST PRECIOUS CREATIONS',
+    action: 'BOOK VIEWING'
   },
   services: {
     personalization: {
-      title: 'PERSONALIZATION',
-      text: 'CREATE YOUR UNIQUE PIECE'
+      title: 'BESPOKE CREATION',
+      text: 'DESIGN YOUR UNIQUE PIECE'
     },
     appointment: {
-      title: 'BOOK AN APPOINTMENT',
-      text: 'EXPERIENCE EXCELLENCE'
+      title: 'PRIVATE VIEWING',
+      text: 'EXCLUSIVE CONSULTATION'
     },
     gifting: {
       title: 'ART OF GIFTING',
-      text: 'EXCLUSIVE WRAPPING'
+      text: 'EXQUISITE PRESENTATION'
     }
   },
   footer: {
     brand: {
-      slogan: 'Heritage & Innovation'
+      slogan: 'A Century of Artistry · Eternal Brilliance'
     },
     contact: {
       title: 'Contact',
@@ -61,7 +61,7 @@ export const en = {
     copyright: '© 2024 MAISON ÉLÉGANCE. All rights reserved.'
   },
   sidebar: {
-    contact: 'CONTACT',
+    contact: 'APPOINTMENT',
     address: 'Please update address'
   }
 }; 

@@ -15,12 +15,17 @@ export default function Hero({ t }) {
         />
       </div>
       <div className={styles.heroContent}>
-        <h1 className={styles.heroTitle}>
-          {t.hero.title}
-        </h1>
-        <p className={styles.heroSubtitle}>
-          {t.hero.subtitle}
-        </p>
+        <div className={styles.brandLogo}>
+          <Image
+            src="/images/brand-logo.svg"
+            alt="MAISON ÉLÉGANCE"
+            width={400}
+            height={120}
+            priority
+          />
+        </div>
+        <h1 className={styles.title}>{t.hero.title}</h1>
+        <p className={styles.subtitle}>{t.hero.subtitle}</p>
       </div>
     </section>
   );

@@ -31,35 +31,59 @@
   max-width: 1200px;
 }
 
-.heroTitle {
+.brandLogo {
+  margin-bottom: 3rem;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+.title {
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 200;
   letter-spacing: 0.3em;
   margin-bottom: 0.8rem;
-  font-family: var(--font-primary);
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out 0.5s forwards;
 }
 
-.heroSubtitle {
+.subtitle {
   font-size: clamp(0.9rem, 1.5vw, 1.2rem);
   font-weight: 300;
   letter-spacing: 0.2em;
-  opacity: 0.8;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 768px) {
   .hero {
     height: 80vh;
   }
-
+  
   .heroContent {
     width: 85%;
   }
-
-  .heroTitle {
+  
+  .title {
     letter-spacing: 0.2em;
   }
-
-  .heroSubtitle {
+  
+  .subtitle {
     letter-spacing: 0.15em;
+  }
+  
+  .brandLogo img {
+    width: 300px;
+    height: auto;
   }
 } 
