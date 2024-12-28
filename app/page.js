@@ -10,12 +10,12 @@ import Featured from './components/Featured/Featured';
 import Latest from './components/Latest/Latest';
 import Services from './components/Services/Services';
 import Footer from './components/Footer/Footer';
+import LanguageSelector from './components/LanguageSelector/LanguageSelector';
 
 export default function Home() {
-  const [language, setLanguage] = useState('zh');
+  const [language, setLanguage] = useState('en');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isHeroVisible, setIsHeroVisible] = useState(true);
-  const t = language === 'zh' ? zh : en;
 
   const handleScroll = useCallback(() => {
     const heroSection = document.querySelector('[data-hero]');
@@ -45,6 +45,8 @@ export default function Home() {
     };
   }, [isMenuOpen]);
 
+  const t = language === 'zh' ? zh : en;
+
   return (
     <main className={styles.main}>
       <Sidebar 
@@ -52,6 +54,8 @@ export default function Home() {
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}
         isHeroVisible={isHeroVisible}
+        language={language}
+        setLanguage={setLanguage}
       />
 
       <Hero t={t} />
@@ -64,11 +68,12 @@ export default function Home() {
 
       <Services t={t} />
 
-      <Footer 
-        t={t}
-        language={language}
-        setLanguage={setLanguage}
-      />
+      <Footer t={t}>
+        <LanguageSelector 
+          language={language}
+          setLanguage={setLanguage}
+        />
+      </Footer>
     </main>
   );
 }

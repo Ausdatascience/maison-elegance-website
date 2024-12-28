@@ -4,19 +4,15 @@ import styles from './Services.module.css';
 export default function Services({ t }) {
   return (
     <section className={styles.services}>
-      <div className={styles.serviceGrid}>
-        <div className={styles.serviceItem}>
-          <h4>{t.services.personalization.title}</h4>
-          <p>{t.services.personalization.text}</p>
-        </div>
-        <div className={styles.serviceItem}>
-          <h4>{t.services.appointment.title}</h4>
-          <p>{t.services.appointment.text}</p>
-        </div>
-        <div className={styles.serviceItem}>
-          <h4>{t.services.gifting.title}</h4>
-          <p>{t.services.gifting.text}</p>
-        </div>
+      <h2>{t.services.title}</h2>
+      <p className={styles.description}>{t.services.description}</p>
+      <div className={styles.servicesGrid}>
+        {t.services.items.map((service, index) => (
+          <div key={index} className={styles.serviceCard}>
+            <h3>{service.title}</h3>
+            <p>{service.description}</p>
+          </div>
+        ))}
       </div>
     </section>
   );

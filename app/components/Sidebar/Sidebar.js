@@ -1,12 +1,15 @@
 'use client';
 import styles from './Sidebar.module.css';
 
-export default function Sidebar({ t, isMenuOpen, setIsMenuOpen, isHeroVisible }) {
+export default function Sidebar({ t, isMenuOpen, setIsMenuOpen, isHeroVisible, language, setLanguage }) {
+  const toggleLanguage = () => {
+    setLanguage(language === 'en' ? 'zh' : 'en');
+  };
+
   return (
     <>
-      {/* Hamburger Button */}
       <button 
-        className={`${styles.hamburger} ${isMenuOpen ? styles.open : ''} ${isHeroVisible ? styles.white : ''}`}
+        className={`${styles.hamburger} ${isMenuOpen ? styles.open : ''} ${!isHeroVisible ? styles.dark : ''}`}
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         aria-label="Menu"
       >
@@ -15,7 +18,14 @@ export default function Sidebar({ t, isMenuOpen, setIsMenuOpen, isHeroVisible })
         <span></span>
       </button>
 
-      {/* Sidebar */}
+      <button
+        className={styles.langSwitch}
+        onClick={toggleLanguage}
+        aria-label="Switch Language"
+      >
+        {language === 'en' ? '中' : 'En'}
+      </button>
+
       <div className={`${styles.sidebar} ${isMenuOpen ? styles.open : ''}`}>
         <nav className={styles.sidebarNav}>
           <a href="#home" onClick={() => setIsMenuOpen(false)}>
@@ -34,17 +44,17 @@ export default function Sidebar({ t, isMenuOpen, setIsMenuOpen, isHeroVisible })
             {t.nav.stores}
           </a>
         </nav>
+
         <div className={styles.sidebarInfo}>
           <h4>{t.sidebar.contact}</h4>
-          <p>{t.footer.contact.email}</p>
+          <p>{t.sidebar.email}</p>
           <p>{t.sidebar.address}</p>
-          <p>{t.footer.contact.phone}</p>
+          <p>{t.sidebar.phone}</p>
         </div>
       </div>
 
-      {/* Sidebar Overlay */}
       <div 
-        className={`${styles.sidebarOverlay} ${isMenuOpen ? styles.open : ''}`}
+        className={`${styles.overlay} ${isMenuOpen ? styles.open : ''}`}
         onClick={() => setIsMenuOpen(false)}
       ></div>
     </>

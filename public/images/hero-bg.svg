@@ -1,16 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1920" height="1080" fill="#1A1A1A"/>
-  <path d="M0 0H1920V1080H0V0Z" fill="url(#paint0_linear)"/>
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M960 540C960 540 1440 270 1920 540V1080H0V540C480 270 960 540 960 540Z" fill="url(#paint1_radial)" fill-opacity="0.4"/>
+  <rect width="1920" height="1080" fill="black"/>
+  
+  <g opacity="0.1">
+    <line x1="0" y1="100" x2="1920" y2="100" stroke="white" stroke-width="0.2"/>
+    <line x1="0" y1="300" x2="1920" y2="300" stroke="white" stroke-width="0.2"/>
+    <line x1="0" y1="500" x2="1920" y2="500" stroke="white" stroke-width="0.2"/>
+    <line x1="0" y1="700" x2="1920" y2="700" stroke="white" stroke-width="0.2"/>
+    <line x1="0" y1="900" x2="1920" y2="900" stroke="white" stroke-width="0.2"/>
+  </g>
+
+  <g transform="translate(960, 400) scale(3)" opacity="0.3">
+    <path d="M0 0 C-150 -150 -300 0 0 200" stroke="white" stroke-width="0.5" fill="none"/>
+    <path d="M0 0 C150 -150 300 0 0 200" stroke="white" stroke-width="0.5" fill="none"/>
+    
+    <path d="M-100 0 C-50 -50 0 0 0 100" stroke="white" stroke-width="0.3" fill="none" opacity="0.8"/>
+    <path d="M100 0 C50 -50 0 0 0 100" stroke="white" stroke-width="0.3" fill="none" opacity="0.8"/>
+    
+    <path d="M0 -50 L0 -80" stroke="white" stroke-width="0.3" opacity="0.6"/>
+    <path d="M-60 -30 L-90 -45" stroke="white" stroke-width="0.3" opacity="0.6"/>
+    <path d="M60 -30 L90 -45" stroke="white" stroke-width="0.3" opacity="0.6"/>
+  </g>
+
+  <rect width="1920" height="1080" fill="url(#overlay)"/>
   <defs>
-    <linearGradient id="paint0_linear" x1="960" y1="0" x2="960" y2="1080" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#2A2A2A"/>
-      <stop offset="1" stop-color="#1A1A1A"/>
+    <linearGradient id="overlay" x1="0" y1="0" x2="0" y2="1080">
+      <stop offset="0%" style="stop-color: rgba(0,0,0,0.7)"/>
+      <stop offset="50%" style="stop-color: rgba(0,0,0,0.4)"/>
+      <stop offset="100%" style="stop-color: rgba(0,0,0,0.7)"/>
     </linearGradient>
-    <radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(960 540) rotate(90) scale(540 960)">
-      <stop stop-color="#F2F0E6" stop-opacity="0.1"/>
-      <stop offset="1" stop-color="#F2F0E6" stop-opacity="0"/>
-    </radialGradient>
   </defs>
 </svg> 

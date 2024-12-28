@@ -4,13 +4,22 @@ export const zh = {
     collections: '臻品系列',
     about: '品牌世家',
     sustainability: '珠宝传承',
-    stores: '精品沙龙'
+    stores: '精品沙龙',
+    contact: '预约咨询'
+  },
+  sidebar: {
+    contact: '联系我们',
+    email: 'contact@maisonelegance.com',
+    address: '',
+    phone: ''
   },
   hero: {
     title: '臻美·永恒',
-    subtitle: '匠心雕琢 · 璀璨人生'
+    subtitle: '世代传承'
   },
   collections: {
+    title: '系列',
+    viewAll: '查看全部',
     iconic: {
       title: '传世臻品',
       action: '臻赏系列'
@@ -21,47 +30,41 @@ export const zh = {
     }
   },
   featured: {
-    title: '匠心臻艺',
-    text: '传承百年珠宝工艺，演绎当代奢华美学',
-    action: '探索工艺'
+    title: '精选',
+    description: '探索我们精心挑选的永恒之作',
+    action: '了解更多'
   },
   latest: {
-    title: '新季臻品',
-    text: '邂逅璀璨臻品，演绎优雅格调',
-    action: '预约鉴赏'
+    title: '最新',
+    description: '体验我们的新品系列',
+    action: '查看更多'
   },
   services: {
-    personalization: {
-      title: '定制珍品',
-      text: '独特设计，专属于您'
-    },
-    appointment: {
-      title: '私人鉴赏',
-      text: '尊享专属预约服务'
-    },
-    gifting: {
-      title: '臻礼服务',
-      text: '精致包装，完美呈现'
-    }
+    title: '匠心工艺',
+    description: '精湛工艺与创新设计的完美融合',
+    items: [
+      {
+        title: '定制设计',
+        description: '创造专属于您的作品'
+      },
+      {
+        title: '专业咨询',
+        description: '专业指导服务'
+      },
+      {
+        title: '售后关怀',
+        description: '终身维护服务'
+      }
+    ]
   },
   footer: {
-    brand: {
-      slogan: '百年匠艺 · 璀璨永恒'
-    },
-    contact: {
-      title: '联系我们',
-      phone: '+86 21 1234 5678',
-      email: 'contact@maisonelegance.com'
-    },
-    social: {
-      title: '关注我们',
-      instagram: 'Instagram',
-      wechat: '微信'
-    },
-    copyright: '© 2024 MAISON ÉLÉGANCE. 保留所有权利'
-  },
-  sidebar: {
-    contact: '预约咨询',
-    address: '请修改地址'
+    brand: 'MAISON ÉLÉGANCE',
+    tagline: '永恒优雅 · 永恒之美',
+    contact: '联系我们',
+    email: 'contact@maisonelegance.com',
+    address: '',
+    phone: '',
+    social: '关注我们',
+    copyright: '© 2024 MAISON ÉLÉGANCE. 保留所有权利。'
   }
 }; 

@@ -1,48 +1,60 @@
 .services {
-  padding: 4rem 1.5rem;
-  background: #000000;
-  color: #ffffff;
+  padding: 4rem 2rem;
+  background: #000;
+  color: #fff;
 }
 
-.serviceGrid {
-  max-width: 1400px;
-  margin: 0 auto;
+.services h2 {
+  text-align: center;
+  color: #B8860B;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1em;
+}
+
+.description {
+  text-align: center;
+  color: #888;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  letter-spacing: 0.05em;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.servicesGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  text-align: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.serviceItem {
-  padding: 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+.serviceCard {
+  text-align: center;
+  padding: 2rem;
+  border: 1px solid #222;
   transition: all 0.3s ease;
 }
 
-.serviceItem:hover {
-  border-color: rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.03);
+.serviceCard:hover {
+  border-color: #B8860B;
+  transform: translateY(-5px);
 }
 
-.serviceItem h4 {
-  font-size: 1rem;
-  font-weight: 300;
-  letter-spacing: 0.15em;
-  margin-bottom: 0.8rem;
-  color: #ffffff;
+.serviceCard h3 {
+  color: #B8860B;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1em;
 }
 
-.serviceItem p {
+.serviceCard p {
+  color: #888;
   font-size: 0.9rem;
   line-height: 1.6;
-  color: #ffffff;
-  opacity: 0.7;
   letter-spacing: 0.05em;
-  transition: opacity 0.3s ease;
-}
-
-.serviceItem:hover p {
-  opacity: 0.9;
 }
 
 @media (max-width: 768px) {
@@ -50,7 +62,25 @@
     padding: 3rem 1rem;
   }
 
-  .serviceGrid {
+  .services h2 {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .servicesGrid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .serviceCard {
+    padding: 1.5rem;
+  }
+
+  .serviceCard h3 {
+    font-size: 1.1rem;
   }
 } 

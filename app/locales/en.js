@@ -1,67 +1,70 @@
 export const en = {
   nav: {
-    home: 'HOME',
-    collections: 'COLLECTIONS',
-    about: 'HERITAGE',
-    sustainability: 'SAVOIR-FAIRE',
-    stores: 'BOUTIQUES'
+    home: 'Home',
+    collections: 'Fine Collections',
+    about: 'Heritage',
+    sustainability: 'Legacy',
+    stores: 'Salon',
+    contact: 'Appointment'
+  },
+  sidebar: {
+    contact: 'Contact Us',
+    email: 'contact@maisonelegance.com',
+    address: '',
+    phone: ''
   },
   hero: {
     title: 'TIMELESS ELEGANCE',
-    subtitle: 'ARTISTRY IN PRECIOUS MOMENTS'
+    subtitle: 'HERITAGE OF EXCELLENCE'
   },
   collections: {
+    title: 'Collections',
+    viewAll: 'View All',
     iconic: {
-      title: 'HERITAGE COLLECTION',
-      action: 'DISCOVER'
+      title: 'Heritage Collection',
+      action: 'Discover More'
     },
     artycapucines: {
-      title: 'ARTISTIC JEWELS',
-      action: 'EXPLORE'
+      title: 'Artistic Treasures',
+      action: 'Explore Collection'
     }
   },
   featured: {
-    title: 'CRAFTSMANSHIP',
-    text: 'CELEBRATING A CENTURY OF FINE JEWELRY ARTISTRY',
-    action: 'DISCOVER MORE'
+    title: 'Featured',
+    description: 'Explore our curated selection of timeless pieces',
+    action: 'Learn More'
   },
   latest: {
-    title: 'NEW ARRIVALS',
-    text: 'DISCOVER OUR LATEST PRECIOUS CREATIONS',
-    action: 'BOOK VIEWING'
+    title: 'Latest',
+    description: 'Experience our new collections',
+    action: 'View More'
   },
   services: {
-    personalization: {
-      title: 'BESPOKE CREATION',
-      text: 'DESIGN YOUR UNIQUE PIECE'
-    },
-    appointment: {
-      title: 'PRIVATE VIEWING',
-      text: 'EXCLUSIVE CONSULTATION'
-    },
-    gifting: {
-      title: 'ART OF GIFTING',
-      text: 'EXQUISITE PRESENTATION'
-    }
+    title: 'Craftsmanship',
+    description: 'The perfect fusion of exquisite craftsmanship and innovative design',
+    items: [
+      {
+        title: 'Bespoke Design',
+        description: 'Create your unique masterpiece'
+      },
+      {
+        title: 'Expert Consultation',
+        description: 'Professional guidance service'
+      },
+      {
+        title: 'Aftercare',
+        description: 'Lifetime maintenance service'
+      }
+    ]
   },
   footer: {
-    brand: {
-      slogan: 'A Century of Artistry · Eternal Brilliance'
-    },
-    contact: {
-      title: 'Contact',
-      phone: '+1 (234) 567-89',
-      email: 'contact@maisonelegance.com'
-    },
-    social: {
-      title: 'Follow Us',
-      instagram: 'Instagram',
-      wechat: 'WeChat'
-    },
+    brand: 'MAISON ÉLÉGANCE',
+    tagline: 'Eternal Elegance · Timeless Beauty',
+    contact: 'Contact Us',
+    email: 'contact@maisonelegance.com',
+    address: '',
+    phone: '',
+    social: 'Follow Us',
     copyright: '© 2024 MAISON ÉLÉGANCE. All rights reserved.'
-  },
-  sidebar: {
-    contact: 'APPOINTMENT',
-    address: 'Please update address'
   }
 }; 
