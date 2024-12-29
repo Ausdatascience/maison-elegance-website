@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import styles from './Sidebar.module.css';
 
 export default function Sidebar({ t, isMenuOpen, setIsMenuOpen, isHeroVisible, language, setLanguage }) {
@@ -27,26 +28,29 @@ export default function Sidebar({ t, isMenuOpen, setIsMenuOpen, isHeroVisible, l
       </button>
 
       <div className={`${styles.sidebar} ${isMenuOpen ? styles.open : ''}`}>
-        <nav className={styles.sidebarNav}>
-          <a href="#home" onClick={() => setIsMenuOpen(false)}>
+        <nav className={styles.nav}>
+          <Link href="/" onClick={() => setIsMenuOpen(false)}>
             {t.nav.home}
-          </a>
-          <a href="#collections" onClick={() => setIsMenuOpen(false)}>
+          </Link>
+          <Link href="/collections" onClick={() => setIsMenuOpen(false)}>
             {t.nav.collections}
-          </a>
-          <a href="#about" onClick={() => setIsMenuOpen(false)}>
+          </Link>
+          <Link href="/about" onClick={() => setIsMenuOpen(false)}>
             {t.nav.about}
-          </a>
-          <a href="#sustainability" onClick={() => setIsMenuOpen(false)}>
+          </Link>
+          <Link href="/sustainability" onClick={() => setIsMenuOpen(false)}>
             {t.nav.sustainability}
-          </a>
-          <a href="#stores" onClick={() => setIsMenuOpen(false)}>
+          </Link>
+          <Link href="/stores" onClick={() => setIsMenuOpen(false)}>
             {t.nav.stores}
-          </a>
+          </Link>
+          <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
+            {t.nav.contact}
+          </Link>
         </nav>
 
-        <div className={styles.sidebarInfo}>
-          <h4>{t.sidebar.contact}</h4>
+        <div className={styles.contact}>
+          <h3>{t.sidebar.contact}</h3>
           <p>{t.sidebar.email}</p>
           <p>{t.sidebar.address}</p>
           <p>{t.sidebar.phone}</p>

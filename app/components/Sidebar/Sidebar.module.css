@@ -225,4 +225,23 @@
   .sidebarInfo p {
     font-size: 0.8rem;
   }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #B8860B;
 } 
