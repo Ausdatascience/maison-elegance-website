@@ -8,16 +8,16 @@ export default function Latest({ t }) {
       <div className={styles.latestGrid}>
         <div className={styles.latestImage}>
           <Image
-            src="/images/latest-1.svg"
+            src="/images/349309b5-9628-479e-baee-9a25716ec162_0.jpeg"
             alt="Latest Collection"
-            width={1200}
-            height={800}
+            width={400}
+            height={400}
             className={styles.latestImg}
           />
         </div>
         <div className={styles.latestContent}>
           <h2>{t.latest.title}</h2>
-          <p>{t.latest.text}</p>
+          <p>{t.latest.description}</p>
           <button className={styles.latestButton}>
             {t.latest.action}
           </button>

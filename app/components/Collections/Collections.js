@@ -9,10 +9,10 @@ export default function Collections({ t }) {
         <article className={styles.collectionItem}>
           <div className={styles.collectionImage}>
             <Image
-              src="/images/collection-1.svg"
+              src="/images/adf42d26-151b-46f3-a7a5-421ca8e77c51_0.jpeg"
               alt="Classic Collection"
-              width={800}
-              height={1067}
+              width={400}
+              height={400}
               className={styles.collectionImg}
             />
           </div>
@@ -24,10 +24,10 @@ export default function Collections({ t }) {
         <article className={styles.collectionItem}>
           <div className={styles.collectionImage}>
             <Image
-              src="/images/collection-2.svg"
+              src="/images/6b910f4e-e430-452f-9386-70353bb9754c_0.jpeg"
               alt="Art Collection"
-              width={800}
-              height={1067}
+              width={400}
+              height={400}
               className={styles.collectionImg}
             />
           </div>
